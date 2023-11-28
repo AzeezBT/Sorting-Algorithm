@@ -19,25 +19,41 @@ To write a program to perform selection sort and insertion sort using python pro
 5.	Repeat the steps 2 to 4 for sorting all the elements in the array.
 ## Program:
 i)	#Selection Sort
-```
-
-
-
-
-
+``` 
+Program to sort the elements in the list using the Selection Sort algorithm.
+Developed by: Azeez Ahamad
+RegisterNumber: 23003977
+'''
+def selection_sort(nums):
+    for i in range(len(nums)):
+        lowest_value_index=i
+        for j in range(i+1, len(nums)):
+            if nums[j]<nums[lowest_value_index]:
+                lowest_value_index=j
+        nums[i],nums[lowest_value_index]=nums[lowest_value_index],nums[i]
+list_of_nums=eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
 ```
 ii)	#Insertion Sort
 ```
+def selection_sort(nums):
+    for i in range(len(nums)):
+        lowest_value_index = i
+        for j in range(i+1, len(nums)):
+            if nums[j] < nums[lowest_value_index]:
+                lowest_value_index = j
+        nums[i], nums[lowest_value_index] = nums[lowest_value_index], nums[i]
 
-
-
-
-
-
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
 ```
 
 ## Output:
-
-
+### i)
+![image](https://github.com/AzeezBT/Sorting-Algorithm/assets/150319523/387923e8-c5fc-4206-a531-3a60b7da5bc2)
+### ii)
+![image](https://github.com/AzeezBT/Sorting-Algorithm/assets/150319523/139971b3-7199-4df1-8033-2652f4677ee5)
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
